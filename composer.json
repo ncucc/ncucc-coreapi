@@ -1,0 +1,21 @@
+{
+    "name": "linuzilla/ncucc-coreapi",
+    "description": "NCUCC CoreAPI Client",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mac Liu",
+            "email": "linuzilla@gmail.com",
+            "homepage": "https://github.com/linuzilla"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NCUCC\\CoreAPI\\": "src/"
+        }
+    }
+}
