@@ -75,9 +75,8 @@ class BaseAPI {
 		}
 
 		if ($data != null) {
-			# print_r ($data);
 			$opts['body'] = json_encode($data);
-			print_r ($opts);
+			# print_r ($opts);
 		}
 
 		$method = strtoupper($entry->method);
