@@ -91,7 +91,8 @@ class APIEntry {
 
 				if ($i > 0) {
 					if ($i > 0 and $i <= count($args)) {
-						$data[$k] = self::$funcMap[$fcname]($ctrl, $args[$i - 1]);
+						$func = self::$funcMap[$fcname];
+						$data[$k] = $func($ctrl, $args[$i - 1]);
 					} else {
 						throw new \Exception("arguments not exists");
 					}

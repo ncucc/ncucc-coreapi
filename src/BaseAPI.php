@@ -90,7 +90,7 @@ class BaseAPI {
 			if ($data->code == 20000) {
 				return $data->result;
 			} else {
-				print_r ($data);
+				// print_r ($data);
 				throw new APIException($data);
 			}
 		} else {
